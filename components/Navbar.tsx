@@ -20,7 +20,7 @@ export async function Navbar() {
     profile = data ?? null
   }
 
-  const displayName = profile?.full_name ?? user?.user_metadata?.full_name ?? profile?.username ?? 'Account'
+  const displayName = profile?.full_name ?? user?.user_metadata?.full_name ?? 'Account'
   const initials = getInitials(displayName)
 
   return (
