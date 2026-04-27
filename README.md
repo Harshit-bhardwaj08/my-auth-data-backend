@@ -9,7 +9,7 @@ TaskFlow helps users organize daily work in one place. It includes secure authen
 
 ## Live Demo
 
-Deployed website: <ADD_DEPLOYED_LINK_HERE>
+Deployed website: https://my-auth-data-backend-ltmf.vercel.app/
 
 ## Features
 
@@ -39,7 +39,7 @@ Deployed website: <ADD_DEPLOYED_LINK_HERE>
 ### 1. Clone the repository
 
 ```bash
-git clone <https://github.com/Harshit-bhardwaj08/my-auth-data-backend>
+git clone https://github.com/Harshit-bhardwaj08/my-auth-data-backend
 cd my-auth-backend-data
 ```
 
