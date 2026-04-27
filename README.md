@@ -1,10 +1,7 @@
 # TaskFlow
 
+
 TaskFlow is a production-style task management web application built with Next.js, Supabase, TypeScript, and Tailwind CSS. It provides authentication, protected dashboards, task management, profile editing, password recovery, and account settings in a clean, responsive interface.
-
-## Project Title
-
-TaskFlow
 
 ## Description
 
@@ -42,7 +39,7 @@ Deployed website: <ADD_DEPLOYED_LINK_HERE>
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone <https://github.com/Harshit-bhardwaj08/my-auth-data-backend>
 cd my-auth-backend-data
 ```
 
@@ -117,19 +114,21 @@ SUPABASE_SERVICE_ROLE_KEY=your_service_role_key_here
 
 ## Screenshots
 
-Add project screenshots here when preparing the final submission.
+### Homepage / Landing Page
+
+![Homepage screenshot](public/screenshots/homepage.png)
 
 ### Dashboard
 
-![Dashboard screenshot](<ADD_DASHBOARD_SCREENSHOT_LINK_HERE>)
+![Dashboard screenshot](public/screenshots/dashboard.png)
 
 ### Profile Page
 
-![Profile page screenshot](<ADD_PROFILE_SCREENSHOT_LINK_HERE>)
+![Profile page screenshot](public/screenshots/profile.png)
 
 ### Settings Page
 
-![Settings page screenshot](<ADD_SETTINGS_SCREENSHOT_LINK_HERE>)
+![Settings page screenshot](public/screenshots/settings.png)
 
 ## Deployment Instructions
 
