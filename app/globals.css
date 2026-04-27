@@ -1,0 +1,192 @@
+@import 'tailwindcss';
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(34, 197, 94, 0.12), transparent 30%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.taskflow-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.taskflow-card {
+  @apply rounded-3xl border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.08)];
+}
+
+.taskflow-button {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition;
+}
+
+.taskflow-button-primary {
+  @apply bg-green-500 text-white hover:bg-green-600;
+}
+
+.taskflow-button-secondary {
+  @apply border border-slate-300 bg-white text-slate-900 hover:bg-slate-50;
+}
+
+.taskflow-input {
+  @apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-green-500 focus:ring-2 focus:ring-green-100;
+}
+
+.taskflow-label {
+  @apply mb-2 block text-sm font-medium text-slate-700;
+}
+
+.taskflow-badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold;
+}
+
+.taskflow-badge-high {
+  @apply bg-red-100 text-red-700;
+}
+
+.taskflow-badge-medium {
+  @apply bg-amber-100 text-amber-700;
+}
+
+.taskflow-badge-low {
+  @apply bg-emerald-100 text-emerald-700;
+}
+
+/* Widgets */
+
+.card {
+  width: 100%;
+  display: block;
+  border: var(--custom-border);
+  border-radius: var(--custom-border-radius);
+  padding: var(--custom-spacing);
+}
+
+.avatar {
+  border-radius: var(--custom-border-radius);
+  overflow: hidden;
+  max-width: 100%;
+}
+.avatar.image {
+  object-fit: cover;
+}
+.avatar.no-image {
+  background-color: #333;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+}
+
+.footer {
+  position: absolute;
+  max-width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row;
+  border-top: var(--custom-border);
+  background-color: var(--custom-bg-color);
+}
+.footer div {
+  padding: var(--custom-spacing);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.footer div > img {
+  height: 20px;
+  margin-left: 10px;
+}
+.footer > div:first-child {
+  display: none;
+}
+.footer > div:nth-child(2) {
+  justify-content: left;
+}
+
+@media only screen and (min-width: 60em) {
+  /* 960px */
+  .footer > div:first-child {
+    display: flex;
+  }
+  .footer > div:nth-child(2) {
+    justify-content: center;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mainHeader {
+  width: 100%;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.avatarPlaceholder {
+  border: var(--custom-border);
+  border-radius: var(--custom-border-radius);
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-widget {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-widget > .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #444444;
+  text-transform: none !important;
+  transition: all 0.2s ease;
+}
+
+.form-widget .button:hover {
+  background-color: #2a2a2a;
+}
+
+.form-widget .button > .loader {
+  width: 17px;
+  animation: spin 1s linear infinite;
+  filter: invert(1);
+}
