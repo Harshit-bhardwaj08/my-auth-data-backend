@@ -40,7 +40,7 @@ Deployed website: https://my-auth-data-backend-ltmf.vercel.app/
 
 ```bash
 git clone https://github.com/Harshit-bhardwaj08/my-auth-data-backend
-cd my-auth-backend-data
+cd my-auth-data-backend
 ```
 
 ### 2. Install dependencies
